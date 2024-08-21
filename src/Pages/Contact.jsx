@@ -1,5 +1,9 @@
+import BannerCommon from "../Components/BannerCommon"
+
 function Contact() {
-  return <div>contact</div>;
+  return <div>
+    <BannerCommon heading="Contact Us" />
+  </div>;
 }
 
 export default Contact;

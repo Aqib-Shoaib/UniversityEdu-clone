@@ -73,6 +73,63 @@ const SectionButtons = styled.section`
   gap: 3.5rem;
   padding: 5rem;
 `;
+const ALignment = styled.div`
+  display:Grid;
+  grid-template-columns:${props=>props.left ?"20% auto" :"auto 20%" } ;
+  gap:3.5rem;
+`;
+const Div = styled.div`
+padding:1rem 4rem;
+display:flex;
+flex-direction:column;
+gap:2rem;
+`;
+const Defhead = styled.h3`
+font-weight:500;
+font-size:28px;
+line-height:34px;
+color:#32404d;
+`;
+const Defp = styled.p`
+color:#5d646a;
+font-size:1rem;
+line-hieght:26px;
+`;
+const Qoute = styled.p`
+color:#212529;
+font-size:1rem;
+line-hieght:24px;
+`;
+const Defs = styled.div`
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:3rem;
+margin:0.5rem 1.5rem;
+`;
+const QouteDiv = styled.div`
+background-color:#F9F9FF;
+border-left: 2px solid #F15B43;
+padding:1.5rem;
+margin:1rem;
+`;
+const Flex = styled.div`
+display:flex;
+gap:2rem;
+
+`;
+const Img = styled.img`
+width:33%;
+height: auto;
+`
+const Img2 = styled.img`
+width:50%;
+height: auto;
+`;
+const Images = styled.div`
+display:flex;
+flex-direction:column;
+gap:3rem;
+`
 
 function Elements() {
   return (
@@ -488,6 +545,77 @@ function Elements() {
       </SectionButtons>
 
       {/* left alignement and right alignmentn */}
+      <Div>
+        <h1>
+          Left Aligned
+        </h1>
+        <ALignment left={true}>
+          <img src="d.jpg.webp" alt="left aligned or right aligned" />
+          <p>
+          Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.
+          </p>
+        </ALignment>
+      </Div>
+      <Div>
+        <h1>
+          Right Aligned
+        </h1>
+        <ALignment left={false}>
+          <p>
+          Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.
+          </p>
+          <img src="d.jpg.webp" alt="left aligned or right aligned" />
+        </ALignment>
+      </Div>
+
+
+              {/* 3 column grid */}
+      <Div>
+        <Defhead>Definitions</Defhead>
+        <Defs>
+          {  
+            [1,2,3].map(val=><div key={val} >
+              <Defhead>Definition 0{val}</Defhead>
+              <Defp>
+              Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks
+              </Defp>
+            </div>)
+          }
+        </Defs>
+      </Div>
+
+{/* block qoutes */}
+          <Div>
+            <Defhead>Block Quotes</Defhead>
+            <div>
+              <QouteDiv>
+                <Qoute>
+                “Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking”
+                </Qoute>
+              </QouteDiv>
+            </div>
+          </Div>
+{/* image gallery */}
+          <Div>
+            <Defhead>Image Gallery</Defhead>
+            <Images>
+              <Flex >
+                <Img src="single_blog_1.jpg" alt="" />
+                <Img src="single_blog_1.jpg" alt="" />
+                <Img src="single_blog_1.jpg" alt="" />
+              </Flex>
+              <Flex >
+                <Img2 src="single_blog_2.jpg" alt="" />
+                <Img2 src="single_blog_2.jpg" alt="" />
+              </Flex>
+              <Flex >
+                <Img src="single_blog_1.jpg" alt="" />
+                <Img src="single_blog_1.jpg" alt="" />
+                <Img src="single_blog_1.jpg" alt="" />
+              </Flex>
+            </Images>
+          </Div>
+
     </div>
   );
 }
