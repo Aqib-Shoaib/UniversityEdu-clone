@@ -9,6 +9,13 @@ const StyledBanner = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8rem;
+
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem;
+    hieght: 15vh;
+  }
 `;
 const Green = styled.span`
   color: #109e7c;
@@ -54,7 +61,7 @@ function Banner() {
       </div>
       <Second>
         <CountdownTimer />
-        <A href="javascript:void(0)">Learn More</A>
+        <A href='javascript:void(0)'>Learn More</A>
       </Second>
     </StyledBanner>
   );

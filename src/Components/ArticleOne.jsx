@@ -7,6 +7,14 @@ const StyledArticle = styled.div`
   padding: 10rem;
   grid-template-columns: 40vw 40vw;
   place-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const H2 = styled.h2`
   font-weight: 900;
@@ -48,7 +56,7 @@ const Flex = styled.div`
 function ArticleOne() {
   return (
     <StyledArticle>
-      <Img src="/about1.jpg" alt="about image" />
+      <Img src='/about1.jpg' alt='about image' />
       <Flex>
         <H2>A COMPREHENSIVE TEACHING APPROACH</H2>
         <P>
@@ -62,7 +70,7 @@ function ArticleOne() {
           ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac.
           Morbi vitae tincidunt mi, et malesuada massa.
         </P>
-        <A href="">Learn More</A>
+        <A href=''>Learn More</A>
       </Flex>
     </StyledArticle>
   );

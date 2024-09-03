@@ -13,7 +13,6 @@ import styled from "styled-components";
 const StyledFooter = styled.footer`
   background-color: #32404d;
   margin: 0;
-  height: 75vh;
 `;
 const Copyright = styled.div`
   margin: 0rem 7rem;
@@ -39,6 +38,11 @@ const Main = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 7rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem;
+  }
 `;
 const H3 = styled.h3`
   color: #fff;
@@ -115,33 +119,33 @@ function Footer() {
   return (
     <StyledFooter>
       <Main>
-        <img src="logo2_footer.png" alt="footer logo of university edu" />
+        <img src='logo2_footer.png' alt='footer logo of university edu' />
         <Linkdiv>
           <H3>Quick Links</H3>
-          <Links to="#">Work</Links>
-          <Links to="#">Services</Links>
-          <Links to="#">Products</Links>
-          <Links to="#">Tips & Tricks</Links>
+          <Links to='#'>Work</Links>
+          <Links to='#'>Services</Links>
+          <Links to='#'>Products</Links>
+          <Links to='#'>Tips & Tricks</Links>
         </Linkdiv>
         <Linkdiv>
           <H3>Programs</H3>
-          <Links to="#">Air Frieght</Links>
-          <Links to="#">Ocean Frieght</Links>
-          <Links to="#">Large projects</Links>
+          <Links to='#'>Air Frieght</Links>
+          <Links to='#'>Ocean Frieght</Links>
+          <Links to='#'>Large projects</Links>
         </Linkdiv>
         <Linkdiv>
           <H3>Resources</H3>
-          <Links to="#">FAQ</Links>
-          <Links to="#">Submit Ticket</Links>
-          <Links to="#">Contact us</Links>
+          <Links to='#'>FAQ</Links>
+          <Links to='#'>Submit Ticket</Links>
+          <Links to='#'>Contact us</Links>
         </Linkdiv>
         <Linkdiv>
           <H3>Newsletter</H3>
-          <Label htmlFor="">Subscribe Newsletter to get updates</Label>
+          <Label htmlFor=''>Subscribe Newsletter to get updates</Label>
           <Div>
-            <Input type="email" name="" placeholder="Enter your Email" id="" />
+            <Input type='email' name='' placeholder='Enter your Email' id='' />
             <Btn>
-              <img src="/Icon-send.svg" alt="send button image" />
+              <img src='/Icon-send.svg' alt='send button image' />
             </Btn>
           </Div>
           <Social>
@@ -166,7 +170,7 @@ function Footer() {
           <S>
             <FontAwesomeIcon icon={faHeart} />
           </S>{" "}
-          by <A href="https://colorlib.com">Colorlib</A>
+          by <A href='https://colorlib.com'>Colorlib</A>
         </P>
       </Copyright>
     </StyledFooter>

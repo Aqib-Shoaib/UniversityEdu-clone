@@ -11,6 +11,10 @@ const StyledBanner = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  }
 `;
 const Span = styled.span`
   font-weight: 400;
@@ -18,6 +22,10 @@ const Span = styled.span`
   line-height: 24px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 const H1 = styled.h1`
   font-weight: 900;
@@ -25,6 +33,10 @@ const H1 = styled.h1`
   line-height: 65px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+
+  @media screen and (max-width: 768px) {
+    font-size: 34px;
+  }
 `;
 const P = styled.p`
   font-weight: 400;
@@ -50,6 +62,11 @@ const A = styled.a`
     background: transparent;
     border: 1px solid #fff;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+  }
 `;
 const Container = styled.div`
   max-width: 630px;
@@ -67,7 +84,7 @@ function HomeBanner() {
           quidem itaque error, sint sit in.
         </P>
       </Container>
-      <A href="/programs">Get started</A>
+      <A href='/programs'>Get started</A>
     </StyledBanner>
   );
 }

@@ -55,6 +55,11 @@ const Grid = styled.div`
   padding: 1rem 5rem;
   place-items: center;
   gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const Img = styled.img`
   object-fit: cover;
@@ -65,24 +70,24 @@ function TopStories() {
   return (
     <Main>
       <H3>Top Stories</H3>
-      <A href="">More Stories</A>
+      <A href=''>More Stories</A>
       <Grid>
         <div>
-          <Img src="/class-img1.jpg" alt="story one" />
+          <Img src='/class-img1.jpg' alt='story one' />
           <P>
             Linguistics alumna says recognizing Indigenous Languages Day is
             crucial to our histories
           </P>
         </div>
         <div>
-          <Img src="/class-img2.jpg" alt="story one" />
+          <Img src='/class-img2.jpg' alt='story one' />
           <P>
             Linguistics alumna says recognizing Indigenous Languages Day is
             crucial to our histories
           </P>
         </div>
         <div>
-          <Img src="/class-img3.jpg" alt="story one" />
+          <Img src='/class-img3.jpg' alt='story one' />
           <P>
             Linguistics alumna says recognizing Indigenous Languages Day is
             crucial to our histories

@@ -16,11 +16,18 @@ const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 6rem;
   width: 100vw;
   height: 13vh;
   position: ${({ isSticky }) => (isSticky ? "fixed" : "relative")};
   top: ${({ isSticky }) => (isSticky ? 0 : "")};
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0.25rem;
+    hieght: 17vh;
+    padding: 2.5rem;
+  }
 `;
 const Social = styled.div`
   display: flex;
@@ -33,6 +40,10 @@ const StyledNav = styled.nav`
   align-items: center;
   justify-content: center;
   gap: 4rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 0.4rem;
+  }
 `;
 const Navigation = styled.nav`
   display: flex;
@@ -161,21 +172,21 @@ function Nav() {
   return (
     <StyledNavbar isSticky={isSticky}>
       <StyledNav>
-        <StyledLink to="/">
-          <img src="/logo.png" alt="univeristy edu logo" />
+        <StyledLink to='/'>
+          <img src='/logo.png' alt='univeristy edu logo' />
         </StyledLink>
         <Navigation>
-          <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/programs">Programs</StyledLink>
+          <StyledLink to='/'>Home</StyledLink>
+          <StyledLink to='/about'>About</StyledLink>
+          <StyledLink to='/programs'>Programs</StyledLink>
           <DropdownContainer>
-            <StyledLink to="/blog">Blog</StyledLink>
-            <Dropdown className="dropdown">
-              <StyledLink to="/blogdetails">Blog Details</StyledLink>
-              <StyledLink to="/elements">Elements</StyledLink>
+            <StyledLink to='/blog'>Blog</StyledLink>
+            <Dropdown className='dropdown'>
+              <StyledLink to='/blogdetails'>Blog Details</StyledLink>
+              <StyledLink to='/elements'>Elements</StyledLink>
             </Dropdown>
           </DropdownContainer>
-          <StyledLink to="/contact">Contact</StyledLink>
+          <StyledLink to='/contact'>Contact</StyledLink>
         </Navigation>
       </StyledNav>
       <Social>

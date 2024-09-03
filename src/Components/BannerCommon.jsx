@@ -6,17 +6,24 @@ const StyledDiv = styled.div`
   background: url("/h1_hero1.jpg");
   display: flex;
   flex-direction: column;
-  padding: 6rem;
+  padding: 3rem;
   background-size: cover;
   background-position: center;
   color: #fff;
   height: 50vh;
+
+  @media screen and (min-width: 768px) {
+    padding: 6rem;
+  }
 `;
 const H1 = styled.h1`
   font-weight: 900;
-  font-size: 54px;
-  line-height: 76px;
   text-transform: capitalize;
+
+  @media screen and (min-width: 768px) {
+    font-size: 54px;
+    line-height: 76px;
+  }
 `;
 const P = styled.p`
   font-weight: 400;

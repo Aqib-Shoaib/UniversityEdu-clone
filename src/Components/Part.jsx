@@ -4,6 +4,11 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 50vw 50vw;
   place-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const Img = styled.img`
   max-width: 100%;
@@ -48,7 +53,7 @@ const A = styled.a`
 function Part() {
   return (
     <Grid>
-      <Img src="/visit2.jpg" alt="visit image" />
+      <Img src='/visit2.jpg' alt='visit image' />
       <Box>
         <H3>Trusted By over 6k studenst</H3>
         <P>
@@ -63,7 +68,7 @@ function Part() {
           Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
           vitae tincidunt malesuada massa.
         </P>
-        <A href="">learn more</A>
+        <A href=''>learn more</A>
       </Box>
     </Grid>
   );

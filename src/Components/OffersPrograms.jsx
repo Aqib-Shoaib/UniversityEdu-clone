@@ -65,6 +65,11 @@ const Boxes = styled.div`
   grid-template-columns: 40vw 40vw;
   place-items: center;
   gap: 3rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
 `;
 const Box = styled.div`
   display: flex;
@@ -99,44 +104,44 @@ function OffersProgram() {
       </P>
       <Boxes>
         <Box>
-          <Img src="/blog1.jpg" alt="offer blog image" />
+          <Img src='/blog1.jpg' alt='offer blog image' />
           <H3>faculty of science</H3>
           <Pp>
             Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
             vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
             sit amet condimentum.
           </Pp>
-          <A href="/programs">Learn More</A>
+          <A href='/programs'>Learn More</A>
         </Box>
         <Box>
-          <Img src="/blog2.jpg" alt="offer blog image" />
+          <Img src='/blog2.jpg' alt='offer blog image' />
           <H3>faculty of arts</H3>
           <Pp>
             Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
             vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
             sit amet condimentum.
           </Pp>
-          <A href="/programs">Learn More</A>
+          <A href='/programs'>Learn More</A>
         </Box>
         <Box>
-          <Img src="/blog1.jpg" alt="offer blog image" />
+          <Img src='/blog1.jpg' alt='offer blog image' />
           <H3>faculty of science</H3>
           <Pp>
             Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
             vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
             sit amet condimentum.
           </Pp>
-          <A href="/programs">Learn More</A>
+          <A href='/programs'>Learn More</A>
         </Box>
         <Box>
-          <Img src="/blog1.jpg" alt="offer blog image" />
+          <Img src='/blog1.jpg' alt='offer blog image' />
           <H3>faculty of science</H3>
           <Pp>
             Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi
             vitae tincidunt mi, et malesuada massa. Sed blandit placerat elit
             sit amet condimentum.
           </Pp>
-          <A href="/programs">Learn More</A>
+          <A href='/programs'>Learn More</A>
         </Box>
       </Boxes>
     </Main>

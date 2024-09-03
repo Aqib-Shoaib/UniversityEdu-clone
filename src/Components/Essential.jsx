@@ -48,6 +48,11 @@ const Grid = styled.div`
   grid-template-columns: 50vw 50vw;
   padding: 0;
   gap: 1rem;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const Div = styled.div`
   padding: 1rem;
@@ -124,7 +129,7 @@ function Essential() {
           </I>
         </Box>
       </Div>
-      <img src="/visit1.jpg" alt="esssential visit image" />
+      <img src='/visit1.jpg' alt='esssential visit image' />
     </Grid>
   );
 }
