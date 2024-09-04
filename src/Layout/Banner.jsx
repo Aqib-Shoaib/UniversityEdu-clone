@@ -3,18 +3,17 @@ import CountdownTimer from "../Components/CountdownTimer";
 
 const StyledBanner = styled.div`
   background: #32404d;
-  height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8rem;
+  padding: 3rem;
 
   @media screen and (max-width: 992px) {
     flex-direction: column;
     gap: 0.5rem;
     padding: 3rem;
-    hieght: 15vh;
   }
 `;
 const Green = styled.span`

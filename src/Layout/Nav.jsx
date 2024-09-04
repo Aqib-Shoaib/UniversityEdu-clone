@@ -18,14 +18,12 @@ const StyledNavbar = styled.div`
   justify-content: center;
   gap: 6rem;
   width: 100vw;
-  height: 13vh;
   position: ${({ isSticky }) => (isSticky ? "fixed" : "relative")};
   top: ${({ isSticky }) => (isSticky ? 0 : "")};
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 0.25rem;
-    hieght: 17vh;
     padding: 2.5rem;
   }
 `;
@@ -43,6 +41,7 @@ const StyledNav = styled.nav`
 
   @media screen and (max-width: 768px) {
     gap: 0.4rem;
+    flex-direction: column;
   }
 `;
 const Navigation = styled.nav`
